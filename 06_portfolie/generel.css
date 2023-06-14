@@ -1,0 +1,263 @@
+@media (max-width:750px){
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+}
+
+@font-face {
+    font-family: "overskrift";
+    src: url(fonte/Roboto-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: "tekst_font";
+    src: url(fonte/Roboto-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: "overkrift_italic";
+    src: url(fonte/Roboto-MediumItalic.ttf);
+  }
+  
+  @font-face {
+    font-family: "overskrift2";
+    src: url(fonte/Roboto-Medium.ttf);
+  }
+  
+  body {
+    margin: 10px;
+    padding: 10px;
+    background-color: #a5c6e1;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /****** Main grid + margin ******/
+  
+  main {
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+  
+  div {
+    margin-top: 2rem;
+  }
+  /******** Tekst/hr ***********/
+
+  
+  h1 {
+    font-family: "overskrift";
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(2.5rem, 10.7vw - 2.2rem, 4.5rem);
+  }
+  
+  h2 {
+    font-family: "overskrift2";
+    font-weight: 500;
+    font-style: italic;
+    font-size: clamp(1.7rem, 6.4vw - 1.1rem, 2.9rem);
+  }
+  
+  h3 {
+    font-family: "overskrift2";
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1.3rem, 3.7vw - 0.3rem, 2rem);
+  }
+  
+  h4 {
+    font-family: "overskrift2";
+    font-weight: 300;
+    font-style: normal;
+    font-size: clamp(1rem, 3.2vw - 0.4rem, 1.6rem);
+  }
+  
+  p {
+    font-family: "tekst_font";
+    font-weight: 200;
+    font-style: normal;
+    font-size: clamp(1.2rem, 0.5vw + 1rem, 1.3rem);
+    letter-spacing: 0.1em;
+  }
+  
+  footer p {
+    font-family: "tekst_font";
+    font-weight: 100;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+
+  }
+  
+  /************ knapper ***************/
+  .knap a {
+    font-family: "overskrift2";
+    font-weight: 200;
+    font-size: 25px;
+    font-style: normal;
+    text-decoration: none;
+  }
+  
+  .knap a:hover {
+    color: black;
+    border-bottom: 1px solid;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .knap {
+    border: 2px solid rgb(72, 72, 185); ;
+    background-color: transparent;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .knap2 {
+    border: 2px solid rgb(72, 72, 185);;
+    background-color: transparent;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .knap2 a {
+    font-family: "overskrift2";
+    font-weight: 200;
+    font-size: 15px;
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(72, 72, 185);;
+  }
+  
+  .knap2 a:hover {
+    color: black;
+    border-bottom: 1px solid;
+    transition: all 0.3s ease-in-out;
+  }
+  
+
+ /* HEADER */ 
+
+ header {
+    position: relative;
+    display: flex;
+    padding: 0rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+ }
+
+ .logo{
+    width: 10%;
+ }
+ header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 30px;
+    font-size: 25px;
+    padding-top: 8%;
+
+ }
+
+header a{
+    text-decoration: none;
+    font-weight: 1000;
+    color: rgb(72, 72, 185);
+}
+
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+header {
+  position: relative; 
+}
+
+.index_menu {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute; 
+  top: 100%; 
+  right: 0;
+  background-color:transparent; 
+  z-index: 1; 
+}
+
+.index_menu.left {
+  right: auto; 
+  left: 0; 
+}
+
+.index_menu li {
+  padding: 10px;
+  background-color: transparent; 
+}
+
+.index_menu li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.index_menu.show-menu {
+  display: block; 
+}
+
+.index_menu.show-menu .default-text {
+  display: none; 
+}
+header .index_nav div {
+  margin-top: 0; 
+}
+
+
+/* FOOTER */ 
+
+footer {
+  display: grid;
+  padding: 50px;
+  background-image: url('bølge.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+
+.section_footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    justify-content: center;
+    
+
+}
+

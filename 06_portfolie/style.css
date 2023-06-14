@@ -1,0 +1,64 @@
+
+/* INDEX */ 
+
+.img_forside {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 750px){
+    .img_forside {
+        width: 100%;
+        }
+    }
+
+
+
+
+
+/* PORTFOLIO */ 
+
+
+
+
+
+/* TEMA 2 */ 
+
+
+
+
+
+/* TEMA 3 */ 
+
+
+
+
+/* TEMA 4 */ 
+
+
+
+
+
+/* TEMA 5 */ 
+
+
+
+/* Om mig */ 
+@media (min-width:750px){
+
+   .container {
+        display: flex;
+        align-items: center;
+      }
+      
+      .image {
+        flex: 1;
+      }
+      
+      .text {
+        flex: 1;
+      }
+      
+}
+
